@@ -12,14 +12,13 @@ function LeakyFunnel() {
         <div key={stage} className="relative flex flex-col items-center">
           <motion.div
             initial={{ opacity: 0, scaleX: 0 }}
-            animate={{ opacity: 1, scaleX: 1 }}
+            animate={{ opacity: 1 - i * 0.12, scaleX: 1 }}
             transition={{ delay: 0.3 + i * 0.2, duration: 0.4, ease: 'easeOut' }}
             className="flex items-center justify-center text-xs font-semibold text-white rounded-sm"
             style={{
               width: widths[i],
               height: 36,
               background: i === 1 ? '#EF4444' : '#6366F1',
-              opacity: 1 - i * 0.12,
               clipPath: i < stages.length - 1
                 ? `polygon(0 0, 100% 0, ${100 - (widths[i] - widths[i+1]) / widths[i] * 50}% 100%, ${(widths[i] - widths[i+1]) / widths[i] * 50}% 100%)`
                 : 'none',

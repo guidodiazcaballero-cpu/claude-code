@@ -21,10 +21,10 @@ function BarChart() {
             style={{
               height: h,
               backgroundColor: color,
-              transformOrigin: 'bottom',
               width: 32,
               borderRadius: '6px 6px 0 0',
             }}
+            originY={1}
           />
           <span className="text-xs text-gray-400">{day}</span>
         </div>

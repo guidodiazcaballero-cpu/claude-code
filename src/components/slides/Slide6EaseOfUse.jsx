@@ -15,7 +15,7 @@ function Counter() {
 
   useEffect(() => {
     const controls = animate(count, 100, { duration: 2.5, ease: 'easeInOut', delay: 0.5 })
-    return controls.stop
+    return () => controls.stop()
   }, [count])
 
   return <motion.span>{rounded}</motion.span>
