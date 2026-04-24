@@ -77,7 +77,7 @@ export default function Slide7CTA() {
         transition={{ delay: 3.0 }}
         className="text-gray-400 text-base tracking-wider"
       >
-        visualsuite.io
+        visual-suite.com
       </motion.p>
     </div>
   )
