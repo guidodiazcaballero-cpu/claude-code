@@ -22,15 +22,15 @@ export default function NavArrows({ onPrev, onNext, goTo, current, total }) {
           <ChevronRight size={22} className="text-gray-700" />
         </button>
       )}
-      {/* Slide dots — mobile */}
-      <div className="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 flex gap-2">
+      {/* Slide dots */}
+      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 flex gap-1.5">
         {Array.from({ length: total }).map((_, i) => (
           <button
             key={i}
             aria-label={`Ir al slide ${i + 1}`}
             onClick={() => goTo ? goTo(i) : (i < current ? onPrev() : i > current ? onNext() : null)}
-            className={`w-2 h-2 rounded-full transition-all ${
-              i === current ? 'bg-[#6366F1] w-4' : 'bg-gray-300'
+            className={`h-1.5 rounded-full transition-all duration-300 ${
+              i === current ? 'bg-[#6366F1] w-4' : 'bg-gray-300 w-1.5'
             }`}
           />
         ))}

@@ -37,11 +37,11 @@ export default function App() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="flex items-center justify-center w-20 h-20 rounded-2xl bg-[#6366F1] shadow-xl">
-            <span className="text-white font-extrabold text-3xl">VS</span>
+          <div className="flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-[#6366F1] shadow-xl">
+            <span className="text-white font-extrabold text-2xl md:text-3xl">VS</span>
           </div>
-          <h1 className="text-2xl font-bold text-gray-800">Visual Suite</h1>
-          <p className="text-gray-500 text-base">Tu CRM todo en uno para clínicas</p>
+          <h1 className="text-xl md:text-2xl font-bold text-gray-800">Visual Suite</h1>
+          <p className="text-gray-500 text-sm md:text-base">Tu CRM todo en uno para clínicas</p>
 
           <motion.div
             animate={{ scale: [1, 1.08, 1] }}
