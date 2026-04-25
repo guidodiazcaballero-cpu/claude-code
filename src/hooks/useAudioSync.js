@@ -27,7 +27,7 @@ export function useAudioSync() {
 
   // Initialize audio elements once
   useEffect(() => {
-    const vo = new Audio('/audio/voiceover.mp3')
+    const vo = new Audio('/ElevenLabs_2026-04-24T06_14_00_El Faraon - Full, Clear, Mellow_pvc_sp100_s50_sb88_v3.mp3')
     const bg = new Audio('/audio/background.mp3')
     bg.volume = 0.15
     bg.loop = true
