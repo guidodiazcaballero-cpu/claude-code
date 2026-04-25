@@ -26,7 +26,7 @@ export function useAudioSync() {
   const usingAudioRef = useRef(false)
 
   useEffect(() => {
-    const vo = new Audio('/voiceover.mp3')
+    const vo = new Audio(import.meta.env.BASE_URL + 'voiceover.mp3')
     vo.preload = 'auto'
     voiceoverRef.current = vo
 
